@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Coroutine Flow</string>
+    <string name="add_user">Add user</string>
+    <string name="enter_username">Enter username:</string>
+    <string name="users_activity">Users Activity</string>
+    <string name="launch_next_screen">Launch next screen</string>
 </resources>
