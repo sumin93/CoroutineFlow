@@ -2,6 +2,7 @@ package com.sumin.coroutineflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.sumin.coroutineflow.crypto_app.CryptoActivity
 import com.sumin.coroutineflow.databinding.ActivityMainBinding
 import com.sumin.coroutineflow.lessons.lesson2.UsersActivity
 
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.buttonUsersActivity.setOnClickListener {
             startActivity(UsersActivity.newIntent(this))
+        }
+        binding.buttonCryptoActivity.setOnClickListener {
+            startActivity(CryptoActivity.newIntent(this))
         }
     }
 }
