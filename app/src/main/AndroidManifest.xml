@@ -13,6 +13,13 @@
         android:theme="@style/Theme.CoroutineFlow"
         tools:targetApi="31">
         <activity
+            android:name=".team_score.TeamScoreActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".crypto_app.CryptoActivity"
             android:exported="false">
             <meta-data
