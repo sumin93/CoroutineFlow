@@ -1,13 +1,13 @@
 package com.sumin.coroutineflow.team_score
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 
 class TeamScoreViewModel : ViewModel() {
 
-    private val _state = MutableLiveData<TeamScoreState>(TeamScoreState.Game(0, 0))
-    val state: LiveData<TeamScoreState> = _state
+    private val _state = MutableStateFlow<TeamScoreState>(TeamScoreState.Game(0, 0))
+    val state = _state.asStateFlow()
 
     fun increaseScore(team: Team) {
         val currentState = _state.value
