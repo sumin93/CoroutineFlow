@@ -39,25 +39,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/team_2"
+        android:text="@string/default_score"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@id/team_2_score"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/team_1_logo"
-        tools:text="0" />
+        app:layout_constraintTop_toBottomOf="@id/team_1_logo" />
 
     <TextView
         android:id="@+id/team_2_score"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:text="@string/default_score"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/team_1_score"
-        app:layout_constraintTop_toBottomOf="@id/team_2_logo"
-        tools:text="0" />
+        app:layout_constraintTop_toBottomOf="@id/team_2_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
